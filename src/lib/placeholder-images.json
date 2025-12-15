@@ -2,15 +2,15 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Fondo abstracto de una fábrica moderna",
-      "imageUrl": "https://images.unsplash.com/photo-1672172228273-c051a988adcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGZhY3Rvcnl8ZW58MHx8fHwxNzY0OTY4NTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract factory"
+      "description": "Fondo abstracto de una fábrica moderna de inyección de plásticos",
+      "imageUrl": "https://images.unsplash.com/photo-1581092916327-455436a00a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwbGFzdGljJTIwaW5qZWN0aW9uJTIwZmFjdG9yeXxlbnwwfHx8fDE3MjE4MzE4NDd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "plastic injection factory"
     },
     {
       "id": "about-us-team",
-      "description": "Un equipo diverso de profesionales en una reunión",
-      "imageUrl": "https://images.unsplash.com/photo-1681949103006-70066fb25dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NjQ4NzY1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team meeting"
+      "description": "Ingenieros discutiendo planes en una fábrica",
+      "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcnMlMjBkaXNjdXNzaW5nJTIwZmFjdG9yeXxlbnwwfHx8fDE3MjE4MzE5ODZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "engineers factory"
     }
   ]
 }

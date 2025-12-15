@@ -7,7 +7,7 @@ const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
+    <section id="home" className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-center text-white">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
@@ -19,16 +19,16 @@ const Hero = () => {
             />
         )}
       <div className="absolute inset-0 bg-primary/70" />
-      <div className="relative z-10 px-6">
+      <div className="relative z-10 px-6 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
-          Soluciones Plásticas Innovadoras en las que Puede Confiar
+          Versad Plastics: Moldeo por Inyección de Plásticos
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90 drop-shadow-md">
-          Ofreciendo calidad superior y fiabilidad para industrias de todo el mundo. Su éxito es nuestro compromiso.
+        <p className="mt-4 text-lg md:text-xl text-primary-foreground/90 drop-shadow-md">
+         Ofrecemos un servicio integral con tiempos de respuesta rápidos, costos de producción reducidos y soluciones innovadoras para nuestros aliados comerciales.
         </p>
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <Button asChild size="lg" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }} className="shadow-lg">
-            <Link href="#products">Explorar Productos</Link>
+            <Link href="#services">Nuestros Servicios</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary shadow-lg">
             <Link href="#contact">Solicitar Cotización</Link>

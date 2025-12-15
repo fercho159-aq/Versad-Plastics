@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Twitter, Linkedin, Facebook, Factory } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
   { name: 'Nosotros', href: '#about' },
-  { name: 'Servicios', href: '#products' },
-  { name: 'Certificaciones', href: '#certifications' },
+  { name: 'Servicios', href: '#services' },
+  { name: 'Infraestructura', href: '#infrastructure' },
   { name: 'Contacto', href: '#contact' },
 ];
 
@@ -21,9 +21,12 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col">
-            <h3 className="text-xl font-bold text-primary">Versad Plastics</h3>
+             <div className="flex items-center gap-2 mb-2">
+                <Factory className="h-7 w-7 text-primary" />
+                <h3 className="text-xl font-bold text-primary">Versad Plastics</h3>
+            </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Soluciones Plásticas Innovadoras en las que Puede Confiar.
+              Moldeo por inyección de plásticos con más de 15 años de experiencia.
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Versad Plastics. Todos los derechos reservados.

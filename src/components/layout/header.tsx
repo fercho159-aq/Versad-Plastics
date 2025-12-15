@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Factory } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Nosotros', href: '#about' },
-  { name: 'Productos', href: '#products' },
-  { name: 'Certificaciones', href: '#certifications' },
+  { name: 'Servicios', href: '#services' },
+  { name: 'Infraestructura', href: '#infrastructure' },
   { name: 'Contacto', href: '#contact' },
 ];
 
@@ -38,7 +38,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-primary">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
+            <Factory className="h-7 w-7" />
             Versad Plastics
           </Link>
           <nav className="hidden md:flex items-center space-x-6">

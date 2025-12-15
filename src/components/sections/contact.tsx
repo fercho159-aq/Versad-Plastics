@@ -5,7 +5,7 @@ import Map from './map';
 const contactDetails = [
   {
     icon: MapPin,
-    text: '123 Calle Innovación, Parque Tecnológico, NY 10001',
+    text: '123 Calle Innovación, Parque Tecnológico, 20000',
   },
   {
     icon: Phone,
@@ -19,7 +19,7 @@ const contactDetails = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary">
+    <section id="contact" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Ponte en Contacto</h2>
@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">Contáctanos</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Envíanos un Mensaje</h3>
             <ContactForm />
           </div>
           <div className="space-y-8">
