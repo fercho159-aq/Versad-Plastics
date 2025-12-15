@@ -1,6 +1,8 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { ContactForm } from './contact-form';
 import Map from './map';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const contactDetails = [
   {
@@ -13,7 +15,7 @@ const contactDetails = [
   },
   {
     icon: Mail,
-    text: 'contacto@versadplastics.com',
+    text: 'versad.plastics@gmail.com',
   },
 ];
 
@@ -34,7 +36,7 @@ const Contact = () => {
           </div>
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-primary mb-6">Nuestra Ubicación</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-6">Información de Contacto</h3>
               <ul className="space-y-4 text-foreground">
                 {contactDetails.map((detail, index) => (
                   <li key={index} className="flex items-start">
@@ -43,9 +45,15 @@ const Contact = () => {
                   </li>
                 ))}
               </ul>
+              <Button asChild size="lg" className="mt-6 w-full md:w-auto" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
+                <Link href="https://wa.link/5zjyy9" target="_blank">Contactar por WhatsApp</Link>
+              </Button>
             </div>
-            <div className='w-full h-[400px] rounded-lg overflow-hidden shadow-lg'>
-                <Map />
+             <div>
+              <h3 className="text-2xl font-semibold text-primary mb-6">Nuestra Ubicación</h3>
+                <div className='w-full h-[300px] rounded-lg overflow-hidden shadow-lg'>
+                    <Map />
+                </div>
             </div>
           </div>
         </div>

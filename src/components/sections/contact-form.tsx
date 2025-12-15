@@ -43,15 +43,17 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setFormStatus('submitting');
-    console.log(values);
-    // Simulate API call
-    setTimeout(() => {
-        setFormStatus('success');
-        form.reset();
-        setTimeout(() => setFormStatus('idle'), 5000);
-    }, 1500);
+    console.log("Enviando a versad.plastics@gmail.com:", values);
+    
+    // Aquí es donde se integraría la lógica para enviar el correo.
+    // Por ahora, simulamos una llamada a una API.
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    setFormStatus('success');
+    form.reset();
+    setTimeout(() => setFormStatus('idle'), 5000);
   }
 
   return (
