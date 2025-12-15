@@ -5,11 +5,11 @@ import Map from './map';
 const contactDetails = [
   {
     icon: MapPin,
-    text: '123 Calle Innovación, Parque Tecnológico, 20000',
+    text: 'Calle Adolfo López Mateos #85, Tultitlán',
   },
   {
     icon: Phone,
-    text: '(123) 456-7890',
+    text: '55 1099 9428',
   },
   {
     icon: Mail,

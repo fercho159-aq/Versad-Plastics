@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Map = () => {
-  // A generic location is used. Replace with the actual business address in a real-world scenario.
-  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.693994793836!2d-74.00834288459427!3d40.71426897933166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda23d%3A0x1a718641957c5a7!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1622558882835!5m2!1sen!2sus";
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.969624564531!2d-99.17195412577618!3d19.62800313543665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5a4a521453b%3A0x1d0f5e8f237c9de7!2sAdolfo%20L%C3%B3pez%20Mateos%2085%2C%20San%20Francisco%20Chilpan%2C%2054940%20Tultitl%C3%A1n!5e0!3m2!1sen!2smx!4v1721834954752!5m2!1sen!2smx";
 
   return (
     <iframe
