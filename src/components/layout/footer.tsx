@@ -11,9 +11,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { name: 'Facebook', icon: FaFacebook, href: '#' },
-  { name: 'Instagram', icon: FaInstagram, href: '#' },
-  { name: 'TikTok', icon: FaTiktok, href: '#' },
+  { name: 'Facebook', icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61584751973959&locale=es_LA' },
+  { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/versad_plastics/' },
+  { name: 'TikTok', icon: FaTiktok, href: 'https://www.tiktok.com/@versadplastics' },
   { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.link/5zjyy9' },
 ];
 
