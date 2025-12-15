@@ -4,23 +4,23 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const products = [
   {
     icon: Layers,
-    title: 'Custom Polymer Formulations',
-    description: 'Tailor-made polymer blends designed to meet your specific performance and application requirements.',
+    title: 'Formulaciones de Polímeros a Medida',
+    description: 'Mezclas de polímeros personalizadas diseñadas para cumplir con sus requisitos específicos de rendimiento y aplicación.',
   },
   {
     icon: Boxes,
-    title: 'High-Density Polyethylene (HDPE)',
-    description: 'Durable and versatile HDPE for packaging, piping, and industrial components.',
+    title: 'Polietileno de Alta Densidad (HDPE)',
+    description: 'HDPE duradero y versátil para embalajes, tuberías y componentes industriales.',
   },
   {
     icon: FlaskConical,
-    title: 'Specialty Chemical Additives',
-    description: 'Enhance your materials with our range of performance-boosting additives and colorants.',
+    title: 'Aditivos Químicos Especializados',
+    description: 'Mejore sus materiales con nuestra gama de aditivos y colorantes que aumentan el rendimiento.',
   },
   {
     icon: Recycle,
-    title: 'Eco-Friendly Bioplastics',
-    description: 'Sustainable and biodegradable plastic solutions to support your environmental goals.',
+    title: 'Bioplásticos Ecológicos',
+    description: 'Soluciones plásticas sostenibles y biodegradables para apoyar sus objetivos medioambientales.',
   },
 ];
 
@@ -29,9 +29,9 @@ const Products = () => {
     <section id="products" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Products & Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Nuestros Productos y Servicios</h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-                From custom formulations to sustainable materials, we provide a wide range of plastic solutions.
+                Desde formulaciones personalizadas hasta materiales sostenibles, ofrecemos una amplia gama de soluciones plásticas.
             </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

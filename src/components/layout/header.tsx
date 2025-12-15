@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Products', href: '#products' },
-  { name: 'Certifications', href: '#certifications' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Nosotros', href: '#about' },
+  { name: 'Productos', href: '#products' },
+  { name: 'Certificaciones', href: '#certifications' },
+  { name: 'Contacto', href: '#contact' },
 ];
 
 const Header = () => {
@@ -54,7 +54,7 @@ const Header = () => {
           </nav>
           <div className="hidden md:block">
             <Button asChild style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
-              <Link href="#contact">Get a Quote</Link>
+              <Link href="#contact">Obtener Cotización</Link>
             </Button>
           </div>
           <div className="md:hidden">
@@ -83,7 +83,7 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild className="w-4/5" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
-              <Link href="#contact" onClick={handleLinkClick}>Get a Quote</Link>
+              <Link href="#contact" onClick={handleLinkClick}>Obtener Cotización</Link>
             </Button>
           </nav>
         </div>

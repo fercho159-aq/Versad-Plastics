@@ -2,7 +2,7 @@
   "name": "versad-plastics",
   "version": "0.1.0",
   "private": true,
-  "description": "A modern, intuitive, friendly, and legible brochure website for Versad Plastics.",
+  "description": "Un sitio web de catálogo moderno, intuitivo, amigable y legible para Versad Plastics.",
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",

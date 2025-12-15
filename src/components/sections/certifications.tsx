@@ -5,17 +5,17 @@ const certifications = [
   {
     icon: ShieldCheck,
     title: 'ISO 9001:2015',
-    description: 'Recognized for our commitment to quality management systems and continuous improvement.',
+    description: 'Reconocidos por nuestro compromiso con los sistemas de gestión de calidad y la mejora continua.',
   },
   {
     icon: Award,
-    title: 'Plastics Industry Award',
-    description: 'Winner of the "Supplier Partnership" award for excellence in client collaboration.',
+    title: 'Premio de la Industria del Plástico',
+    description: 'Ganador del premio "Colaboración con Proveedores" por la excelencia en la colaboración con clientes.',
   },
   {
     icon: Scale,
-    title: 'Compliance Standards',
-    description: 'Adherence to RoHS and REACH regulations for environmental and health safety.',
+    title: 'Estándares de Cumplimiento',
+    description: 'Cumplimiento de las normativas RoHS y REACH para la seguridad ambiental y sanitaria.',
   },
 ];
 
@@ -23,17 +23,17 @@ const kpis = [
     {
       icon: TrendingUp,
       value: '20+',
-      label: 'Years of Industry Leadership',
+      label: 'Años de Liderazgo en la Industria',
     },
     {
       icon: CheckCircle,
       value: '99.8%',
-      label: 'Product Quality Rate',
+      label: 'Tasa de Calidad del Producto',
     },
     {
       icon: Users,
       value: '500+',
-      label: 'Satisfied Global Clients',
+      label: 'Clientes Globales Satisfechos',
     },
   ];
 
@@ -42,9 +42,9 @@ const Certifications = () => {
     <section id="certifications" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Trust and Excellence, Certified</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Confianza y Excelencia, Certificadas</h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-                Our dedication to quality is backed by industry-recognized certifications and a proven track record.
+                Nuestra dedicación a la calidad está respaldada por certificaciones reconocidas en la industria y un historial probado.
             </p>
         </div>
 

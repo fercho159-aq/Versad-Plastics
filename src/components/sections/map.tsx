@@ -13,7 +13,7 @@ const Map = () => {
         allowFullScreen={false}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Versad Plastics Location"
+        title="Ubicación de Versad Plastics"
         className="w-full h-full"
     ></iframe>
   );

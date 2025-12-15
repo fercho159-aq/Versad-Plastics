@@ -21,13 +21,13 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
+    message: "El nombre debe tener al menos 2 caracteres.",
   }),
   email: z.string().email({
-    message: "Please enter a valid email address.",
+    message: "Por favor, introduce una dirección de correo electrónico válida.",
   }),
   message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
+    message: "El mensaje debe tener al menos 10 caracteres.",
   }),
 });
 
@@ -58,8 +58,8 @@ export function ContactForm() {
     <Card className="p-6 md:p-8 shadow-lg">
       {formStatus === 'success' ? (
         <CardContent className="flex flex-col items-center justify-center min-h-[300px]">
-           <h3 className="text-2xl font-semibold text-primary">Thank You!</h3>
-           <p className="mt-2 text-center text-muted-foreground">Your message has been sent successfully. We will get back to you soon.</p>
+           <h3 className="text-2xl font-semibold text-primary">¡Gracias!</h3>
+           <p className="mt-2 text-center text-muted-foreground">Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.</p>
         </CardContent>
       ) : (
         <Form {...form}>
@@ -69,9 +69,9 @@ export function ContactForm() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel>Nombre Completo</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder="Juan Pérez" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -82,9 +82,9 @@ export function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel>Correo Electrónico</FormLabel>
                   <FormControl>
-                    <Input placeholder="john.doe@example.com" {...field} />
+                    <Input placeholder="juan.perez@ejemplo.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -95,9 +95,9 @@ export function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Your Message</FormLabel>
+                  <FormLabel>Tu Mensaje</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="How can we help you today?" {...field} className="min-h-[120px]" />
+                    <Textarea placeholder="¿Cómo podemos ayudarte hoy?" {...field} className="min-h-[120px]" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -107,10 +107,10 @@ export function ContactForm() {
               {formStatus === 'submitting' ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Sending...
+                  Enviando...
                 </>
               ) : (
-                'Send Message'
+                'Enviar Mensaje'
               )}
             </Button>
           </form>

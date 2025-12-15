@@ -3,10 +3,10 @@ import { Twitter, Linkedin, Facebook } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#products' },
-  { name: 'Certifications', href: '#certifications' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Nosotros', href: '#about' },
+  { name: 'Servicios', href: '#products' },
+  { name: 'Certificaciones', href: '#certifications' },
+  { name: 'Contacto', href: '#contact' },
 ];
 
 const socialLinks = [
@@ -23,14 +23,14 @@ const Footer = () => {
           <div className="flex flex-col">
             <h3 className="text-xl font-bold text-primary">Versad Plastics</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Innovative Plastic Solutions You Can Trust.
+              Soluciones Plásticas Innovadoras en las que Puede Confiar.
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Versad Plastics. All rights reserved.
+              &copy; {new Date().getFullYear()} Versad Plastics. Todos los derechos reservados.
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-secondary-foreground">Quick Links</h4>
+            <h4 className="font-semibold text-secondary-foreground">Enlaces Rápidos</h4>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
@@ -42,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-secondary-foreground">Follow Us</h4>
+            <h4 className="font-semibold text-secondary-foreground">Síguenos</h4>
             <div className="mt-4 flex space-x-4">
               {socialLinks.map((social) => (
                 <Link key={social.name} href={social.href} aria-label={social.name}>
