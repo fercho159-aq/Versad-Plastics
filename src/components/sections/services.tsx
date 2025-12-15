@@ -1,4 +1,4 @@
-import { Home, Car, Lamp, Package, Wrench, Truck, Cog } from 'lucide-react';
+import { Home, Car, Lamp, Package, Wrench, Truck, Cog, CheckCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -73,20 +73,30 @@ const Services = () => {
 
             <TabsContent value="materials">
                 <div className="grid md:grid-cols-2 gap-8">
-                    <Card>
+                    <Card className="flex flex-col">
                         <CardHeader>
                             <CardTitle>Tipos de Moldes</CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                           {molds.map(mold => <p key={mold} className="text-muted-foreground">{mold}</p>)}
+                        <CardContent className="flex-grow grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                           {molds.map(mold => (
+                            <div key={mold} className="flex items-center gap-2">
+                                <CheckCircle className="h-5 w-5 text-accent" />
+                                <span className="text-foreground/80">{mold}</span>
+                            </div>
+                           ))}
                         </CardContent>
                     </Card>
-                    <Card>
+                    <Card className="flex flex-col">
                         <CardHeader>
                             <CardTitle>Tipos de Resinas</CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            {resins.map(resin => <p key={resin} className="text-muted-foreground">{resin}</p>)}
+                        <CardContent className="flex-grow grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                            {resins.map(resin => (
+                                <div key={resin} className="flex items-center gap-2">
+                                    <CheckCircle className="h-5 w-5 text-accent" />
+                                    <span className="text-foreground/80">{resin}</span>
+                                </div>
+                            ))}
                         </CardContent>
                     </Card>
                 </div>
