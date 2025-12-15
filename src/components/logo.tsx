@@ -1,5 +1,5 @@
-import { Factory } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 interface LogoProps {
     className?: string;
@@ -8,7 +8,7 @@ interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
     return (
         <div className={cn("flex items-center gap-2 font-bold text-primary", className)}>
-            <Factory className="h-7 w-7" />
+            <Image src="/logo.svg" alt="Versad Plastics Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-2xl">Versad Plastics</span>
         </div>
     );
