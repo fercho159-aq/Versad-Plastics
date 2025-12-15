@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Versad Trust',
+  title: 'Versad Plastics',
   description: 'Innovative Plastic Solutions You Can Trust',
 };
 

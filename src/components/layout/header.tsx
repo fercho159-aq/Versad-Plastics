@@ -39,7 +39,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-primary">
-            Versad Trust
+            Versad Plastics
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (

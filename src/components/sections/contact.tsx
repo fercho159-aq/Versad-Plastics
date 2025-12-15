@@ -13,7 +13,7 @@ const contactDetails = [
   },
   {
     icon: Mail,
-    text: 'contact@versadtrust.com',
+    text: 'contact@versadplastics.com',
   },
 ];
 
