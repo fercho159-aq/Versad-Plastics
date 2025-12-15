@@ -49,7 +49,7 @@ const Services = () => {
         </div>
 
         <Tabs defaultValue="sectors" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+            <TabsList className="grid max-w-lg mx-auto w-full grid-cols-2 md:grid-cols-3 mb-8">
                 <TabsTrigger value="sectors">Sectores</TabsTrigger>
                 <TabsTrigger value="materials">Materiales</TabsTrigger>
                 <TabsTrigger value="additional">Servicios Adicionales</TabsTrigger>
@@ -58,7 +58,7 @@ const Services = () => {
             <TabsContent value="sectors">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Atendemos Diversas Industrias</CardTitle>
+                        <CardTitle className="text-center md:text-left">Atendemos Diversas Industrias</CardTitle>
                     </CardHeader>
                     <CardContent className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {sectors.map((sector) => (
