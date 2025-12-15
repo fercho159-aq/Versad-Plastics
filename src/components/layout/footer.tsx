@@ -85,7 +85,7 @@ const Footer = () => {
               {socialLinks.map((social) => (
                 <Link key={social.name} href={social.href} aria-label={social.name} target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary hover:bg-accent/20">
-                    <social.icon className="h-5 w-5" />
+                    <social.icon className="h-6 w-6" />
                   </Button>
                 </Link>
               ))}
