@@ -31,7 +31,7 @@ const Hero = () => {
             <Link href="#services">Nuestros Servicios</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary shadow-lg">
-            <Link href="#contact">Solicitar Cotización</Link>
+            <Link href="https://wa.link/5zjyy9" target="_blank">Solicitar Cotización</Link>
           </Button>
         </div>
       </div>
