@@ -8,7 +8,7 @@ interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
     return (
         <div className={cn("flex items-center gap-2 font-bold text-primary", className)}>
-            <Image src="/logo.svg" alt="Versad Plastics Logo" width={32} height={32} className="h-8 w-8" />
+            <Image src="/images/LOGO.png" alt="Versad Plastics Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-2xl">Versad Plastics</span>
         </div>
     );
