@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Twitter, Linkedin, Facebook, Factory } from 'lucide-react';
+import { Facebook, Instagram, Factory } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
@@ -10,9 +10,26 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'LinkedIn', icon: Linkedin, href: '#' },
   { name: 'Facebook', icon: Facebook, href: '#' },
+  { name: 'Instagram', icon: Instagram, href: '#' },
+  { 
+    name: 'TikTok', 
+    icon: (props: React.SVGProps<SVGSVGElement>) => (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        {...props}
+      >
+        <path d="M16.49 3.994c-1.33.1-2.58.6-3.69 1.4v6.25c0 .02.01.04.01.06.07-.02.14-.04.2-.06A6.19 6.19 0 0 1 16.5 9.5a6.5 6.5 0 1 1-6.5-6.5v6.25c0 .02.01.04.01.06.07-.02.14-.04.2-.06a6.19 6.19 0 0 1 3.5-1.15V3.994z" />
+      </svg>
+    ), 
+    href: '#' 
+  },
 ];
 
 const Footer = () => {
