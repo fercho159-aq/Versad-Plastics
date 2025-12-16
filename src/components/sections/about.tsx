@@ -70,7 +70,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Nuestra Misión</h3>
                   <p className="text-foreground/80">
-                    “En Versad Plastics nos comprometemos a fabricar productos de plástico de alta calidad que superen las expectativas de nuestros clientes en términos de funcionalidad y durabilidad. Buscando siempre la mejora continua”.
+                    En Versad Plastics nos comprometemos a fabricar productos de plástico de alta calidad que superen las expectativas de nuestros clientes en términos de funcionalidad y durabilidad. Buscando siempre la mejora continua.
                   </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Nuestra Visión</h3>
                   <p className="text-foreground/80">
-                    “Ser reconocidos como lideres en la industria de la inyección de plástico, por nuestra innovación, calidad y compromiso con la sostenibilidad. Brindando siempre el mejor servicio a nuestros clientes”.
+                    Ser reconocidos como líderes en la industria de la inyección de plástico, por nuestra innovación, calidad y compromiso con la sostenibilidad. Brindando siempre el mejor servicio a nuestros clientes.
                   </p>
                 </div>
               </div>
