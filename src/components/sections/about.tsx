@@ -2,6 +2,13 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Target, Eye, Gem, UserCheck, Lightbulb, Award, Leaf, Users, TrendingUp } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const aboutImage = PlaceHolderImages.find(p => p.id === 'about-us-team');
 
@@ -105,38 +112,35 @@ const About = () => {
                     Los principios que guían cada una de nuestras acciones y decisiones.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                {values.slice(0, -1).map((value) => ( // Show all but the last one in the main grid
-                    <Card key={value.title} className="text-center bg-card hover:shadow-lg transition-shadow duration-300">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 text-primary rounded-full p-3 w-fit mb-4">
-                            <value.icon className="h-8 w-8" />
-                        </div>
-                        <CardTitle className="text-lg">{value.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground text-sm">{value.description}</p>
-                    </CardContent>
-                    </Card>
-                ))}
-            </div>
-             <div className="mt-8 flex justify-center">
-                 <div className="lg:w-1/4 md:w-1/2 w-full">
-                    {values.slice(-1).map((value) => ( // Show the last one centered
-                        <Card key={value.title} className="text-center bg-card hover:shadow-lg transition-shadow duration-300">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {values.map((value) => (
+                  <CarouselItem key={value.title} className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <div className="p-1 h-full">
+                      <Card className="text-center bg-card hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
                         <CardHeader>
                             <div className="mx-auto bg-primary/10 text-primary rounded-full p-3 w-fit mb-4">
                                 <value.icon className="h-8 w-8" />
                             </div>
                             <CardTitle className="text-lg">{value.title}</CardTitle>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="flex-grow">
                             <p className="text-muted-foreground text-sm">{value.description}</p>
                         </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </div>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
         </div>
       </div>
     </section>
