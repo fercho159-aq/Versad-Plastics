@@ -62,7 +62,7 @@ const Services = () => {
                     </CardHeader>
                     <CardContent className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {sectors.map((sector) => (
-                        <div key={sector.name} className="flex items-center gap-4 p-4 bg-secondary rounded-lg">
+                        <div key={sector.name} className="flex items-center gap-4 p-4 bg-card hover:bg-secondary rounded-lg transition-colors">
                             <sector.icon className="h-8 w-8 text-accent" />
                             <span className="font-semibold text-primary">{sector.name}</span>
                         </div>
