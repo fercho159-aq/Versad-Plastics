@@ -1,10 +1,11 @@
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const clients = [
   { name: 'Walmart', logoUrl: '/images/1.png' },
-  { name: 'Koblenz', logoUrl: '/images/2.png' },
-  { name: 'Chedraui', logoUrl: '/images/5.png' },
+  { name: 'Koblenz', logoUrl: '/images/2.png', className: 'md:col-span-1 lg:col-span-2' },
+  { name: 'Chedraui', logoUrl: '/images/5.png', className: 'md:col-span-1 lg:col-span-2' },
   { name: 'BBB', logoUrl: '/images/3.png' },
   { name: 'Fuller', logoUrl: '/images/6.png' },
   { name: 'AVON', logoUrl: '/images/4.png' },
@@ -26,7 +27,7 @@ const Clients = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
           {clients.map((client) => (
-            <Card key={client.name} className="bg-card flex items-center justify-center p-6 h-40 hover:shadow-lg transition-shadow duration-300">
+            <Card key={client.name} className={cn("bg-card flex items-center justify-center p-6 h-40 hover:shadow-lg transition-shadow duration-300", client.className)}>
                 <div className="relative w-full h-full">
                     <Image
                         src={client.logoUrl}
