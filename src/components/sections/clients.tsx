@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 
 const clients = [
   { name: 'Walmart', logoUrl: '/images/1.png' },
-  { name: 'Koblenz', logoUrl: '/images/2.png', className: 'md:col-span-1 lg:col-span-2' },
-  { name: 'Chedraui', logoUrl: '/images/5.png', className: 'md:col-span-1 lg:col-span-2' },
+  { name: 'Koblenz', logoUrl: '/images/2.png' },
+  { name: 'Chedraui', logoUrl: '/images/5.png' },
   { name: 'BBB', logoUrl: '/images/3.png' },
   { name: 'Fuller', logoUrl: '/images/6.png' },
   { name: 'AVON', logoUrl: '/images/4.png' },
