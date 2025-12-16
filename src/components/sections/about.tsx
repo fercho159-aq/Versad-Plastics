@@ -86,7 +86,7 @@ const About = () => {
             {aboutImage && (
               <Card className="overflow-hidden rounded-lg shadow-xl">
                  <Image
-                    src={aboutImage.imageUrl}
+                    src="/images/production-of-plastic-cans-2021-08-26-15-33-16-utc.jpg"
                     alt={aboutImage.description}
                     width={800}
                     height={600}

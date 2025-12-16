@@ -10,7 +10,7 @@ const Hero = () => {
     <section id="home" className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-center text-white">
         {heroImage && (
             <Image
-                src={heroImage.imageUrl}
+                src="/images/Injection_molding.jpg"
                 alt={heroImage.description}
                 fill
                 className="object-cover"
