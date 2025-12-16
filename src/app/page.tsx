@@ -5,6 +5,7 @@ import About from '@/components/sections/about';
 import WhyChooseUs from '@/components/sections/why-choose-us';
 import Services from '@/components/sections/services';
 import Infrastructure from '@/components/sections/infrastructure';
+import Clients from '@/components/sections/clients';
 import Contact from '@/components/sections/contact';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <WhyChooseUs />
         <Services />
         <Infrastructure />
+        <Clients />
         <Contact />
       </main>
       <Footer />
