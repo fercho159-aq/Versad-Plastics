@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/table"
 
 const machines = [
+  { ton: '368 T', grams: '600 gm', bars: '690 x 690 mm', opening: '600 mm' },
   { ton: '270 T', grams: '780 gm', bars: '620 x 560 mm', opening: '200 mm a 600 mm' },
   { ton: '265 T', grams: '710 gm', bars: '585 x 565 mm', opening: '200 mm a 600 mm' },
   { ton: '218 T', grams: '518 gm', bars: '510 x 510 mm', opening: '200 mm a 530 mm' },
