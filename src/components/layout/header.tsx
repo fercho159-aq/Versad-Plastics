@@ -54,7 +54,7 @@ const Header = () => {
             ))}
           </nav>
           <div className="hidden md:block">
-            <Button asChild style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
+            <Button asChild>
               <Link href="https://wa.link/5zjyy9" target="_blank">Obtener Cotización</Link>
             </Button>
           </div>
@@ -83,7 +83,7 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button asChild className="w-4/5" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
+            <Button asChild className="w-4/5">
               <Link href="https://wa.link/5zjyy9" target="_blank" onClick={handleLinkClick}>Obtener Cotización</Link>
             </Button>
           </nav>

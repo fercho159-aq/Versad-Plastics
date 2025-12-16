@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-secondary-foreground">Enlaces Rápidos</h4>
+            <h4 className="font-semibold text-primary">Enlaces Rápidos</h4>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
@@ -46,11 +46,11 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-secondary-foreground">Síguenos</h4>
+            <h4 className="font-semibold text-primary">Síguenos</h4>
             <div className="mt-4 flex space-x-4">
               {socialLinks.map((social) => (
                 <Link key={social.name} href={social.href} aria-label={social.name} target="_blank" rel="noopener noreferrer">
-                  <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary hover:bg-accent/20">
+                  <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary hover:bg-primary/10">
                     <social.icon className="h-6 w-6" />
                   </Button>
                 </Link>
