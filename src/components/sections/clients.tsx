@@ -2,15 +2,15 @@ import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 
 const clients = [
-  { name: 'Walmart', logoUrl: '/images/clients/walmart.png' },
-  { name: 'Koblenz', logoUrl: '/images/clients/koblenz.png' },
-  { name: 'Chedraui', logoUrl: '/images/clients/chedraui.png' },
-  { name: 'BBB', logoUrl: '/images/clients/bbb.png' },
-  { name: 'Fuller', logoUrl: '/images/clients/fuller.png' },
-  { name: 'AVON', logoUrl: '/images/clients/avon.png' },
-  { name: 'JOI DOLLAR PLUS', logoUrl: '/images/clients/joi.png' },
-  { name: 'PLASTICOS HER TAR', logoUrl: '/images/clients/her-tar.png' },
-  { name: 'PORTA', logoUrl: '/images/clients/porta.png' },
+  { name: 'Walmart', logoUrl: '/images/1.png' },
+  { name: 'Koblenz', logoUrl: '/images/2.png' },
+  { name: 'Chedraui', logoUrl: '/images/5.png' },
+  { name: 'BBB', logoUrl: '/images/3.png' },
+  { name: 'Fuller', logoUrl: '/images/6.png' },
+  { name: 'AVON', logoUrl: '/images/4.png' },
+  { name: 'JOI DOLLAR PLUS', logoUrl: '/images/7.png' },
+  { name: 'PLASTICOS HER TAR', logoUrl: '/images/8.png' },
+  { name: 'PORTA', logoUrl: '/images/9.png' },
 ];
 
 const Clients = () => {
@@ -26,7 +26,7 @@ const Clients = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
           {clients.map((client) => (
-            <Card key={client.name} className="bg-card flex items-center justify-center p-6 h-32 hover:shadow-lg transition-shadow duration-300">
+            <Card key={client.name} className="bg-card flex items-center justify-center p-6 h-40 hover:shadow-lg transition-shadow duration-300">
                 <div className="relative w-full h-full">
                     <Image
                         src={client.logoUrl}
