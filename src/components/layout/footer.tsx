@@ -28,7 +28,7 @@ const Footer = () => {
                 <Logo className="text-xl" />
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Moldeo por inyección de plásticos con más de 15 años de experiencia.
+              Moldeo por inyección de plásticos con más de 8 años de experiencia.
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Versad Plastics. Todos los derechos reservados.

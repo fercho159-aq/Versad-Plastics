@@ -55,7 +55,7 @@ const About = () => {
     <section id="about" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">Más de 15 Años Impulsando la Industria</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">Más de 8 Años Impulsando la Industria</h2>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-foreground/80">
             En Versad Plastics, combinamos experiencia y tecnología para ofrecer soluciones de moldeo por inyección que superan las expectativas.
           </p>

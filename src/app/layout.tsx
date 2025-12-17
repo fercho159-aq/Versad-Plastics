@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Versad Plastics | Moldeo por Inyección de Plásticos',
-  description: 'Servicio integral de moldeo por inyección con más de 15 años de experiencia. Tiempos de respuesta rápidos, costos de producción reducidos y soluciones innovadoras.',
+  description: 'Servicio integral de moldeo por inyección con más de 8 años de experiencia. Tiempos de respuesta rápidos, costos de producción competitivos y soluciones innovadoras.',
 };
 
 export default function RootLayout({
