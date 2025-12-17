@@ -24,7 +24,7 @@ const Hero = () => {
           Versad Plastics: Moldeo por Inyección de Plásticos
         </h1>
         <p className="mt-4 text-lg md:text-xl text-white/90 drop-shadow-md">
-         Ofrecemos un servicio integral con tiempos de respuesta rápidos, costos de producción reducidos y soluciones innovadoras para nuestros aliados comerciales.
+         Ofrecemos un servicio integral con tiempos de respuesta rápidos, costos de producción competitivos y soluciones innovadoras para nuestros aliados comerciales.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <Button asChild size="lg" className="shadow-lg">
