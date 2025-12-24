@@ -7,7 +7,7 @@ import Link from 'next/link';
 const contactDetails = [
   {
     icon: MapPin,
-    text: 'Calle Adolfo López Mateos #85, Tultitlán',
+    text: 'C. Adolfo López Mateos 85-MZ 009, San Juan, 54900 Tultitlán de Mariano Escobedo, Méx.',
   },
   {
     icon: Phone,
